@@ -112,4 +112,4 @@ If you do not use the default Security Group tag named **fn.aws.joshhogle.com/up
 
 ## Additional Help or Questions
 
-If you have questions about this project, find a bug or wish to submit a feature request, please [submit an issue](https://github.com/josh-hogle/cloudflare-security-group-updated/issues).
+If you have questions about this project, find a bug or wish to submit a feature request, please [submit an issue](https://github.com/josh-hogle/cloudflare-security-group-updater/issues).
