@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Sid": "VisualEditor0",
+          "Effect": "Allow",
+          "Action": [
+              "logs:CreateLogStream",
+              "sts:AssumeRole",
+              "logs:PutLogEvents"
+          ],
+          "Resource": [
+              "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/lambda/update-cloudflare-security-groups:*:*",
+              "arn:aws:iam::ACCOUNT1_ID:role/STS-UpdateCloudflareSecurityGroupsRole",
+              "arn:aws:iam::ACCOUNT2_ID:role/STS-UpdateCloudflareSecurityGroupsRole"
+          ]
+      }
+  ]
+}

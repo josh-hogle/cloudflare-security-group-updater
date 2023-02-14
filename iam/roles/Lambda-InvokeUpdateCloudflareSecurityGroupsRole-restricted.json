@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Sid": "VisualEditor0",
+          "Effect": "Allow",
+          "Action": [
+              "logs:CreateLogStream",
+              "lambda:InvokeFunction",
+              "lambda:InvokeAsync",
+              "logs:PutLogEvents"
+          ],
+          "Resource": [
+              "arn:aws:lambda:REGION:ACCOUNT_ID:function:update-cloudflare-security-groups",
+              "arn:aws:logs:REGION:ACCOUNT_ID:log-group:/aws/lambda/invoke-update-cloudflare-security-groups:*:*"
+          ]
+      },
+      {
+          "Sid": "VisualEditor1",
+          "Effect": "Allow",
+          "Action": [
+              "organizations:ListAccounts",
+              "organizations:ListTagsForResource"
+          ],
+          "Resource": "*"
+      }
+  ]
+}
