@@ -1,4 +1,4 @@
-# Cloudflare Security Group Updater
+# Cloudflare Security Group Updater for AWS Lambda
 
 This tool consists of Lamba functions that automatically update tagged Security Groups belonging to accounts within the organization that be updated with the most current list of IP address blocks from Cloudflare.  The Security Group(s) will have rules allowing **only** Cloudflare IP blocks to access the associated resources over ports 80 and 443.
 
